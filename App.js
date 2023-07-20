@@ -19,8 +19,10 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
     backgroundColor: '#5A7F4B',
-    paddingTop: 80,
+    paddingTop: 130,
   },
 
   saudeicon: {

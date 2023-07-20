@@ -3,9 +3,24 @@ import React from 'react'
 
 export default function Title() { // Esse é o nome que esta exportando
     return(
-        <View>
-            <Text style={{fontSize:24, color: '#5A7F4B', backgroundColor: '#B5B763',padding: 5, borderRadius: 15 }}>APP DE SAUDE TOP</Text>
-            
+        <View style={styles.container}>
+            <Text style= {styles.titleText}>
+                APP DE SAUDE TOP
+            </Text>
         </View>
-    )
+    );
 }
+
+const styles = StyleSheet.create({
+    container: {
+      justifyContent: 'center',
+      alignItems: 'center',
+    },
+    titleText: {
+      borderRadius: 50,
+      backgroundColor: '#F2F2F2',
+      fontSize: 22,
+      paddingVertical: 20,
+      paddingHorizontal: 20,
+    },
+  });
