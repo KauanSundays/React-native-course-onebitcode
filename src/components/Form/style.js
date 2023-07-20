@@ -16,12 +16,16 @@ const styles = StyleSheet.create({
         width: '100%',
         height: 'auto',
         marginTop: 30,
-        padding: 25,
+        paddingHorizontal: 30,
+        
     },
     formLabel: {
-        color: '#FF0',
-        fontSize: 18,
+        color: '#343840',
+        fontSize: 24,
         paddingLeft: 20,
+        fontWeight: 'bold',
+        marginTop: 5,
+        marginBottom: 5
     },
     inputs: {
         width: '90%',
@@ -43,7 +47,15 @@ const styles = StyleSheet.create({
         fontSize: 22,
         padding: 10,
         color: '#F2F2F2',
-    }
+    },
+    errorText: {
+        backgroundColor: '#ff0043',
+        color: 'white',
+        fontSize: 16,
+        textAlign: 'center',
+        paddingVertical: 8,
+        borderRadius: 8,
+      },
 });
 
 export default styles

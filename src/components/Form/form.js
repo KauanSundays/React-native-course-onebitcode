@@ -26,7 +26,7 @@ export default function Form() {
         }
         setImc(null)
         setTextButton("Calcular")
-        setMessageImc('Preencha o peso ou a altura!!')
+        setMessageImc('Preencha o peso e altura!!')
     }
 
 
@@ -42,7 +42,7 @@ export default function Form() {
                 value={height}
                 style={styles.inputs}
                 ></TextInput>
-                <Text>Peso</Text>
+                <Text style={styles.formLabel}>Peso</Text>
 
                 <TextInput
                 placeholder='Your peso'
