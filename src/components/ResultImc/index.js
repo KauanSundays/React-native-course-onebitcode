@@ -4,8 +4,14 @@ import React from 'react'
 export default function ResultImc(props) {
     return (
         <View>
-            <Text>{props.resultImc}</Text>
-            <Text>{props.messageResultImc}</Text>
+            <Text style={styles.result}>{props.messageResultImc}</Text>            
+            <Text style={styles.result}>{props.resultImc}</Text>
         </View>
     )
 }
+
+const styles = StyleSheet.create({
+    result: {
+        fontSize: 30
+    }
+})
