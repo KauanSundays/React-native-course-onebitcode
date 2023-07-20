@@ -1,3 +1,3 @@
 # React-native-course-onebitcode
 
-<image src='pic1.png'></image>
+<image height="300em" src='pic1.png'></image>
