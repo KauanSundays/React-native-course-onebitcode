@@ -1,7 +1,7 @@
 import { StatusBar } from 'expo-status-bar';
 import {Image , StyleSheet, Text, View } from 'react-native';
 import Title from './src/components/title';
-import Form from './src/components/Form';
+import Form from './src/components/Form/form';
 
 export default function App() {
   return (
@@ -20,8 +20,7 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: '#5A7F4B',
-    alignItems: 'center',
-    justifyContent: 'center',
+    paddingTop: 80,
   },
 
   saudeicon: {
@@ -30,4 +29,6 @@ const styles = StyleSheet.create({
     borderColor: '#A62B1F',
     marginBottom: 10
   }
-});
+}
+
+);

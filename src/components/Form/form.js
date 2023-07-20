@@ -1,6 +1,7 @@
-import { StyleSheet, Text, TextInput, View, Button } from 'react-native'
+import { StyleSheet, Text, TextInput, View, TouchableOpacity } from 'react-native'
 import React, {useState} from "react"
 import ResultImc from '../ResultImc';
+import styles from './style'
 
 export default function Form() {
     const [height, setHeight]= useState(null)
@@ -32,54 +33,35 @@ export default function Form() {
 
 
     return (
-        <View>
-            <View>
-                <Text style={styles.title}>Altura</Text>
-                <TextInput style={styles.inputs}
+        <View style={styles.formContext}>
+            <View style={styles.form}>
+                <Text style={styles.formLabel}>Altura</Text>
+                <TextInput
                 placeholder='Your altura'
                 onChangeText={setHeight} //atualiza em tempo real a altura
                 value={height}
+                style={styles.inputs}
                 ></TextInput>
-                <Text style={styles.title}>Peso</Text>
+                <Text>Peso</Text>
 
-                <TextInput style={styles.inputs}
+                <TextInput
                 placeholder='Your peso'
                 onChangeText={setWeight}
-                value={weight}>
+                value={weight}
+                style={styles.inputs}>
                 </TextInput>
                 
-                <Button 
-                title="Calcular IMC"
-                onPress={() => validation()}
-                />
+
+
+                <TouchableOpacity 
+                style={styles.buttonCalculator} 
+                onPress={()=>{validation()}}>
+                    <Text style={styles.textTouch} >Press Here</Text>
+                </TouchableOpacity>
             </View>
 
             <ResultImc messageResultImc={messageImc} resultImc={imc} />
         </View>
     )
-}
-
-const styles = StyleSheet.create({
-    container: {
-      flex: 1,
-      backgroundColor: '#fff',
-      alignItems: 'center',
-      justifyContent: 'center',
-    },
-
-    inputs: {
-        fontSize: 24,
-        height: 40,
-        borderWidth: 1,
-        borderColor: '#000',
-        paddingHorizontal: 30,
-        borderRadius: 10,
-    },
-
-    title: {
-        fontSize: 30,
-      },
-      
-    
-  });
+};
   
