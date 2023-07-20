@@ -24,7 +24,7 @@ export default function Title() {
   return (
     <View style={[styles.container, { backgroundColor }]}>
       <Text style={[styles.titleText, { color: textColor }]}>
-        APP DE SAUDE TOP
+        Calcule seu IMC
       </Text>
     </View>
   );
